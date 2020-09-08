@@ -158,7 +158,7 @@ a.button:hover {
     text-align: center;
     font-weight: 100;
     color: #333;
-    padding: 30px;
+    padding: 100px 0 50px;
     letter-spacing: 20px;
     padding-left: 20px;
 }
@@ -203,4 +203,39 @@ a.button:hover {
     width: 100%;
     height: 350px;
     margin-top: 150px;
+}
+
+/* 頁尾 */
+footer {
+    background: #252525;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+
+footer #icon a {
+    padding: 20px;
+    /* 濾鏡 */
+    filter: opacity(100%);
+    transition: 0.5s;
+}
+
+footer #icon a:hover {
+    filter: opacity(10%);
+}
+
+footer h2 {
+    font-weight: 100;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    padding: 50px 0 40px;
+    font-size: 30px;
+}
+
+footer p {
+    padding: 20px;
+    font-size: 10px;
+    color: #aaa;
+    letter-spacing: 3px;
+    padding-left: 3px;
 }
