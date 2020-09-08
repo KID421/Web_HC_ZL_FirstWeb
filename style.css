@@ -8,6 +8,7 @@
 
 body {
     background: #eee;
+    height: 4000px;
 }
 
 /* 橫幅 */
@@ -102,7 +103,8 @@ body {
     padding: 30px;
     text-align: left;
     line-height: 2;
-    color: #aaa
+    color: #aaa;
+    height: 150px;
 }
 
 #news #news-left {
@@ -120,11 +122,29 @@ a.button {
     text-decoration: none;
     color: #aaa;
     border: 1px solid #aaa;
-    padding: 10px 50px;
+    padding: 15px 80px;
     transition: 0.5s;
 }
 
 a.button:hover {
     color: white;
     background: #aaa;
+}
+
+/* 盒子區塊 */
+#box {
+    background-image: url(./img/box.jpg);
+    background-attachment: fixed;
+}
+
+#box h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    padding: 100px 0;
+    /* 背景濾淨 模糊 */
+    backdrop-filter: blur(5px);
+    letter-spacing: 10px;
+    padding-left: 10px;
+    font-weight: 100;
 }
