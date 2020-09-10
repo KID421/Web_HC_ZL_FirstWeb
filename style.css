@@ -380,4 +380,5 @@ text-align: center;
 
 #form-self #buttons input {
     margin: 20px 30px;
+    cursor: pointer;
 }
