@@ -24,11 +24,11 @@ body {
 }
 
 /* 首頁、關於我 導覽列 */
-#banner nav, #banner-about nav {
+#banner nav, #banner-about nav, #banner-contact nav {
     padding: 30px;  
 }
 
-#banner a, #banner-about a {
+#banner a, #banner-about a, #banner-contact a {
     color: white;
     /* 文字-裝飾：無 */
     text-decoration: none;
@@ -37,7 +37,7 @@ body {
     transition: 0.3s;
 }
 
-#banner a:hover, #banner-about a:hover {
+#banner a:hover, #banner-about a:hover, #banner-contact a:hover {
     color: #aaa;
 }
 
@@ -118,7 +118,7 @@ body {
 }
 
 /* 按鈕樣式 */
-a.button {
+a.button, input[type=reset], input[type=submit] {
     text-decoration: none;
     color: #aaa;
     border: 1px solid #aaa;
@@ -126,7 +126,7 @@ a.button {
     transition: 0.5s;
 }
 
-a.button:hover {
+a.button:hover, input[type=reset]:hover, input[type=submit]:hover {
     color: white;
     background: #aaa;
 }
@@ -266,11 +266,11 @@ footer h2 a:hover {
     background-attachment: fixed;
 }
 
-#banner-about nav {
+#banner-about nav, #banner-contact nav {
     backdrop-filter: opacity(95%);
 }
 
-#banner-about h2 {
+#banner-about h2, #banner-contact h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 100;
@@ -338,3 +338,42 @@ footer h2 a:hover {
     line-height: 2;
     color: #888;
 }
+
+/* 聯絡我 */
+/* 橫幅 */
+#banner-contact {
+    width: 100%;
+    /* vh 螢幕高度 */
+    height: 40vh;
+    background-image: url(./img/banner-about.jpg);
+    /* 背景-尺寸：填滿 - 50%、500px */
+    background-size: cover;
+    color: white;
+    /* 背景-附著：固定 */
+    background-attachment: fixed;
+}
+
+/* 表單 */
+#form-self {
+    width: 1200px;
+    padding: 30px;
+    background: #f6f6f6;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 100px auto 150px;
+  }
+  
+  #form-self #name, #form-self #email, #form-self #message {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  #form-self ::placeholder {
+    color: #ddd;
+  }
+  
+  #form-self #buttons {
+    text-align: center;
+  }
